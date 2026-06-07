@@ -6,7 +6,7 @@ Claude Cowork is the agentic mode of the Claude desktop app. Instead of answerin
 
 > Maintained by [Automata AI](https://www.automataai.com.au/claude-cowork-setup?utm_source=github&utm_medium=readme&utm_campaign=cowork-guide), a Sydney-based Claude consultancy. We run our own business on Cowork — content pipeline, CRM, filing, reporting — and this guide is the setup we use ourselves.
 
-**Last updated: 7 June 2026 · Tested with Claude desktop app (Cowork GA release, April 2026 onward)**
+**Last updated: 8 June 2026 · Tested with Claude desktop app (Cowork GA release, April 2026 onward)**
 
 ---
 
@@ -104,7 +104,7 @@ More prompt patterns: [templates/scheduled-task-prompts.md](templates/scheduled-
 
 Scheduled tasks run your proven workflows automatically — hourly, daily, weekdays, weekly, or manual — each run in its own fresh session, with an optional working folder and model choice ([scheduled tasks documentation](https://support.claude.com/en/articles/13854387)). Create them with /schedule or from the Scheduled page.
 
-What the docs say that most guides miss: tasks only run while the computer is awake with the app open. Missed runs are skipped, then offered for re-run on wake with a notification. So design for "visible if missed": every scheduled task we run writes an output file with a date stamp, so a silent gap is noticeable by its absence. Start with two scheduled tasks, not ten — each run consumes usage (Cowork is heavier than chat), and ten automations you half-watch are worse than two you trust.
+What the docs say that most guides miss: tasks only run while the computer is awake with the app open. Missed runs are skipped, then run automatically once the computer wakes or the app reopens, with a notification when the skipped run happens; skipped runs also appear in the task's history. So design for "visible if missed": every scheduled task we run writes an output file with a date stamp, so a silent gap is noticeable by its absence. Start with two scheduled tasks, not ten — each run consumes usage (Cowork is heavier than chat), and ten automations you half-watch are worse than two you trust.
 
 ## Step 7 — Put your guardrails in writing
 
@@ -150,7 +150,7 @@ Cowork setups drift. The product ships changes frequently (plugins arrived Febru
 
 | Symptom | Likely cause | Fix |
 |---|---|---|
-| Scheduled task did not run | Computer asleep or app closed — missed runs are skipped by design | Re-run on the wake notification; schedule for times the machine is reliably awake |
+| Scheduled task did not run | Computer asleep or app closed — missed runs are skipped by design | It re-runs automatically on wake (watch for the notification); schedule for times the machine is reliably awake |
 | Session stopped mid-task | App closed, sleep, or lost connection | Restart the task; keep long jobs on mains power with sleep disabled |
 | Claude cannot see a file you can see | File outside the granted folder, or cloud-only placeholder not synced locally | Move it into the workspace; force the file to sync/download |
 | Output quality dropped | Context file stale, or task outgrew its prompt | Refresh context; split the task into smaller steps |
