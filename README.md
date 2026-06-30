@@ -6,7 +6,7 @@ Claude Cowork is the agentic mode of the Claude desktop app. Instead of answerin
 
 > Maintained by [Automata AI](https://www.automataai.com.au/claude-cowork-setup?utm_source=github&utm_medium=readme&utm_campaign=cowork-guide), a Sydney-based Claude consultancy. We run our own business on Cowork — content pipeline, CRM, filing, reporting — and this guide is the setup we use ourselves.
 
-**Last updated: 8 June 2026 · Tested with Claude desktop app (Cowork GA release, April 2026 onward)**
+**Last updated: 29 June 2026 · Tested with Claude desktop app (Cowork GA release, April 2026 onward)**
 
 ---
 
@@ -36,7 +36,7 @@ Small business owners and operators (roughly 1 to 20 people) who want Claude Cow
 ## What you need before starting
 
 - **The Claude desktop app** on macOS or Windows. Cowork is not available on the web or mobile, although on Pro and Max plans you can [assign tasks from your phone](https://support.claude.com/en/articles/13947068) to a running desktop session.
-- **Any paid Claude plan.** Since 9 April 2026, Cowork is included on Pro, Max, Team and Enterprise ([release notes](https://support.claude.com/en/articles/12138966-release-notes)). Pro is US$20/month (US$17/month billed annually); Team standard seats are US$25/month or US$20/month annually. In Australia expect roughly A$30–35 per user per month — confirm the exact figure in your billing screen, as Anthropic does not publish AUD pricing on a public page.
+- **Any paid Claude plan.** Since 9 April 2026, Cowork is included on Pro, Max, Team and Enterprise ([release notes](https://support.claude.com/en/articles/12138966-release-notes)). Pro is US$20/month (US$17/month billed annually); Team standard seats are US$25/month or US$20/month annually. In Australia expect roughly A$30–45 per user per month — confirm the exact figure in your billing screen, as Anthropic does not publish AUD pricing on a public page.
 - **An internet connection throughout, and a computer that stays awake.** Cowork sessions stop if the app closes or the computer sleeps, per Anthropic's [getting started guide](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork).
 - **Access to the tools you want connected** — your email, calendar, accounting software, CRM.
 
@@ -171,7 +171,7 @@ Any paid plan: Pro, Max, Team or Enterprise. Pro is enough to start. Heavy daily
 
 ### How much does Claude Cowork cost for a small business?
 
-The software is included in your Claude subscription (Pro at US$20/month per user; roughly A$30–35 in Australia — confirm in your billing screen). The real cost question is setup time: a careful self-setup using this guide takes a few evenings. Done-for-you setup services in Australia run from roughly A$1,500 to A$5,000 depending on depth; [ours](https://www.automataai.com.au/claude-cowork-setup?utm_source=github&utm_medium=readme&utm_campaign=cowork-guide) is a fixed A$3,500 including training and two working workflows.
+The software is included in your Claude subscription (Pro at US$20/month per user; roughly A$30–45 in Australia — confirm in your billing screen). The real cost question is setup time: a careful self-setup using this guide takes a few evenings. Done-for-you setup services in Australia run from roughly A$1,500 to A$5,000 depending on depth; [ours](https://www.automataai.com.au/claude-cowork-setup?utm_source=github&utm_medium=readme&utm_campaign=cowork-guide) is a fixed A$3,500 including training and two working workflows.
 
 ### Is my business data used to train Claude?
 
@@ -179,7 +179,7 @@ On Team and Enterprise plans, no — not by default. On Pro and Max (consumer pl
 
 ### Does Claude Cowork store data in Australia?
 
-No. There is no Australian data residency for Cowork today. Anthropic has said it is exploring expanded compute capacity in Australia (Sydney office announcement, March 2026), and API-level AU residency exists via AWS Bedrock and Google Vertex — but that is a different product. Any provider telling you Cowork keeps your data onshore is wrong.
+No. There is no Australian data residency for Cowork today. Anthropic has said it is exploring expanded compute capacity in Australia (Sydney office announcement, March 2026), and API-level AU residency exists via AWS Bedrock, Google Vertex and Microsoft Foundry — but that is a different product. Any provider telling you Cowork keeps your data onshore is wrong.
 
 ### Can Claude Cowork send emails or invoices by itself?
 
