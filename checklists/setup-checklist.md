@@ -3,7 +3,7 @@
 *Print or copy this. Companion to the [full setup guide](../README.md). Done in order, this is a few evenings of careful work — or see the guide's FAQ for done-for-you options.*
 
 ## Before you start
-- [ ] Claude desktop app installed (macOS or Windows)
+- [ ] Claude desktop app installed (macOS or Windows; Linux in beta)
 - [ ] Paid plan active (Pro is enough to start)
 - [ ] Decided who owns this setup (one named person)
 

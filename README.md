@@ -6,7 +6,7 @@ Claude Cowork is the agentic mode of the Claude desktop app. Instead of answerin
 
 > Maintained by [Automata AI](https://www.automataai.com.au/claude-cowork-setup?utm_source=github&utm_medium=readme&utm_campaign=cowork-guide), a Sydney-based Claude consultancy. We run our own business on Cowork — content pipeline, CRM, filing, reporting — and this guide is the setup we use ourselves.
 
-**Last updated: 29 June 2026 · Tested with Claude desktop app (Cowork GA release, April 2026 onward)**
+**Last updated: 6 July 2026 · Tested with Claude desktop app (Cowork GA release, April 2026 onward)**
 
 ---
 
@@ -35,7 +35,7 @@ Small business owners and operators (roughly 1 to 20 people) who want Claude Cow
 
 ## What you need before starting
 
-- **The Claude desktop app** on macOS or Windows. Cowork is not available on the web or mobile, although on Pro and Max plans you can [assign tasks from your phone](https://support.claude.com/en/articles/13947068) to a running desktop session.
+- **The Claude desktop app** on macOS or Windows (a Linux beta is also available). Cowork is not available on the web or mobile, although on Pro and Max plans you can [assign tasks from your phone](https://support.claude.com/en/articles/13947068) to a running desktop session.
 - **Any paid Claude plan.** Since 9 April 2026, Cowork is included on Pro, Max, Team and Enterprise ([release notes](https://support.claude.com/en/articles/12138966-release-notes)). Pro is US$20/month (US$17/month billed annually); Team standard seats are US$25/month or US$20/month annually. In Australia expect roughly A$30–45 per user per month — confirm the exact figure in your billing screen, as Anthropic does not publish AUD pricing on a public page.
 - **An internet connection throughout, and a computer that stays awake.** Cowork sessions stop if the app closes or the computer sleeps, per Anthropic's [getting started guide](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork).
 - **Access to the tools you want connected** — your email, calendar, accounting software, CRM.
@@ -163,7 +163,7 @@ Worth internalising: community reports of agentic-AI accidents (the widely share
 
 ### Is Claude Cowork available on Windows?
 
-Yes. Cowork reached general availability on both macOS and Windows on 9 April 2026. It requires the desktop app; there is no web or mobile version, though Pro and Max users can dispatch tasks from the mobile app to a running desktop session.
+Yes. Cowork reached general availability on both macOS and Windows on 9 April 2026, and a Linux beta is now available. It requires the desktop app; there is no web or mobile version, though Pro and Max users can dispatch tasks from the mobile app to a running desktop session.
 
 ### Which Claude plan do I need for Cowork?
 
@@ -179,7 +179,7 @@ On Team and Enterprise plans, no — not by default. On Pro and Max (consumer pl
 
 ### Does Claude Cowork store data in Australia?
 
-No. There is no Australian data residency for Cowork today. Anthropic has said it is exploring expanded compute capacity in Australia (Sydney office announcement, March 2026), and API-level AU residency exists via AWS Bedrock, Google Vertex and Microsoft Foundry — but that is a different product. Any provider telling you Cowork keeps your data onshore is wrong.
+No. There is no Australian data residency for Cowork today. Anthropic has said it is exploring expanded compute capacity in Australia (Sydney office announcement, March 2026), and API-level AU residency exists via AWS Bedrock and Google Vertex, with Microsoft Foundry listed as coming in 2026 — but that is a different product. Any provider telling you Cowork keeps your data onshore is wrong.
 
 ### Can Claude Cowork send emails or invoices by itself?
 
