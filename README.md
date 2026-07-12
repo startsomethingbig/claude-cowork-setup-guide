@@ -2,11 +2,11 @@
 
 **A step-by-step guide to setting up Claude Cowork for a small business: folder design, plugins, connectors, your first working workflows, scheduled tasks, and the guardrails that keep it safe.**
 
-Claude Cowork is the agentic mode of the Claude desktop app. Instead of answering one prompt at a time, Claude takes on whole tasks: it works with files in folders you grant it, connects to your email, calendar, accounting and CRM tools, runs multi-step workflows, and executes scheduled tasks automatically. Out of the box, though, it is an empty desk. This guide turns it into a working part of your business.
+Claude Cowork is the agentic mode of Claude, in the desktop app and, since July 2026, on the web and mobile too. Instead of answering one prompt at a time, Claude takes on whole tasks: it works with files in folders you grant it, connects to your email, calendar, accounting and CRM tools, runs multi-step workflows, and executes scheduled tasks automatically. Sessions run remotely on Anthropic's servers, so work continues even when you close your laptop. Out of the box, though, it is an empty desk. This guide turns it into a working part of your business.
 
 > Maintained by [Automata AI](https://www.automataai.com.au/claude-cowork-setup?utm_source=github&utm_medium=readme&utm_campaign=cowork-guide), a Sydney-based Claude consultancy. We run our own business on Cowork — content pipeline, CRM, filing, reporting — and this guide is the setup we use ourselves.
 
-**Last updated: 6 July 2026 · Tested with Claude desktop app (Cowork GA release, April 2026 onward)**
+**Last updated: 13 July 2026 · Tested with Claude desktop app (Cowork GA release, April 2026 onward); web and mobile Cowork in beta from July 2026**
 
 ---
 
@@ -35,9 +35,9 @@ Small business owners and operators (roughly 1 to 20 people) who want Claude Cow
 
 ## What you need before starting
 
-- **The Claude desktop app** on macOS or Windows (a Linux beta is also available). Cowork is not available on the web or mobile, although on Pro and Max plans you can [assign tasks from your phone](https://support.claude.com/en/articles/13947068) to a running desktop session.
+- **The Claude desktop app** on macOS or Windows (a Linux beta is also available), or Cowork on the web (claude.ai) and mobile. As of 7 July 2026 Cowork runs on web and mobile in addition to desktop, in beta and rolling out over several weeks starting with the Max plan ([release notes](https://support.claude.com/en/articles/12138966-release-notes)). Sessions run remotely on Anthropic's servers, so they keep going when your laptop is closed; you still need the desktop app open for a task to reach local files, your browser, or your computer directly.
 - **Any paid Claude plan.** Since 9 April 2026, Cowork is included on Pro, Max, Team and Enterprise ([release notes](https://support.claude.com/en/articles/12138966-release-notes)). Pro is US$20/month (US$17/month billed annually); Team standard seats are US$25/month or US$20/month annually. In Australia expect roughly A$30–45 per user per month — confirm the exact figure in your billing screen, as Anthropic does not publish AUD pricing on a public page.
-- **An internet connection throughout, and a computer that stays awake.** Cowork sessions stop if the app closes or the computer sleeps, per Anthropic's [getting started guide](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork).
+- **An internet connection throughout.** Cowork sessions run remotely, so they keep running when you close your laptop or the computer sleeps. The exception is work that touches local files, your browser, or your computer directly: that reaches your machine through the desktop app, so the app needs to be open for those steps ([getting started guide](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork)).
 - **Access to the tools you want connected** — your email, calendar, accounting software, CRM.
 
 One fact worth being clear about, because several popular guides get it wrong: Cowork does not "run locally so your data stays private". Your prompts and granted files are processed on Anthropic's servers. What is true: on Team and Enterprise plans Anthropic does not train models on your data by default, and on Pro and Max you can opt out ([pricing page](https://claude.com/pricing), [regional compliance](https://claude.com/regional-compliance)). Plan accordingly rather than comfortably.
@@ -64,7 +64,7 @@ cowork-workspace/
 └── 9-archive/        # completed work, read-mostly
 ```
 
-When you grant the folder, Cowork asks for permission and offers two modes: "Ask before acting" and "Act without asking". Start with ask-first; deletion always requires approval in both modes ([Anthropic safety guidance](https://support.claude.com/en/articles/13364135-use-claude-cowork-safely)).
+When you grant the folder, Cowork asks for permission. Cowork now has three approval modes: "Manually approve" (formerly "Ask before acting"), "Automatically approve" (an Auto mode that safety-checks each action before it runs, and uses more of your usage), and "Skip all approvals" (formerly "Act without asking"). Start with Manually approve; deletion always requires your approval in every mode ([Anthropic safety guidance](https://support.claude.com/en/articles/13364135-use-claude-cowork-safely)).
 
 ## Step 2 — Write your business context file
 
@@ -104,7 +104,7 @@ More prompt patterns: [templates/scheduled-task-prompts.md](templates/scheduled-
 
 Scheduled tasks run your proven workflows automatically — hourly, daily, weekdays, weekly, or manual — each run in its own fresh session, with an optional working folder and model choice ([scheduled tasks documentation](https://support.claude.com/en/articles/13854387)). Create them with /schedule or from the Scheduled page.
 
-What the docs say that most guides miss: tasks only run while the computer is awake with the app open. Missed runs are skipped, then run automatically once the computer wakes or the app reopens, with a notification when the skipped run happens; skipped runs also appear in the task's history. So design for "visible if missed": every scheduled task we run writes an output file with a date stamp, so a silent gap is noticeable by its absence. Start with two scheduled tasks, not ten — each run consumes usage (Cowork is heavier than chat), and ten automations you half-watch are worse than two you trust.
+What changed in July 2026, and most guides have not caught up: scheduled tasks now run remotely, with no device online. They run on their cadence even when your computer is asleep or the desktop app is closed ([scheduled tasks documentation](https://support.claude.com/en/articles/13854387)). The one exception is a task that needs local files or apps — that still runs locally, so it only fires when your machine is awake with the app open. Either way, design for "visible if missed": every scheduled task we run writes a date-stamped output file, so a silent gap is noticeable by its absence. Start with two scheduled tasks, not ten — each run consumes usage (Cowork is heavier than chat), and ten automations you half-watch are worse than two you trust.
 
 ## Step 7 — Put your guardrails in writing
 
@@ -150,8 +150,8 @@ Cowork setups drift. The product ships changes frequently (plugins arrived Febru
 
 | Symptom | Likely cause | Fix |
 |---|---|---|
-| Scheduled task did not run | Computer asleep or app closed — missed runs are skipped by design | It re-runs automatically on wake (watch for the notification); schedule for times the machine is reliably awake |
-| Session stopped mid-task | App closed, sleep, or lost connection | Restart the task; keep long jobs on mains power with sleep disabled |
+| Scheduled task did not run | Remote tasks run without your device; a local-files/apps task only runs when the machine is awake with the app open | Check the run history on the Scheduled page; for local-folder tasks, schedule for times the machine is reliably awake |
+| Session stopped mid-task | For remote sessions, usually a lost connection or an error; local-dependent steps pause if the desktop app closes | Reopen the session from any surface to check progress; for local work keep the desktop app open |
 | Claude cannot see a file you can see | File outside the granted folder, or cloud-only placeholder not synced locally | Move it into the workspace; force the file to sync/download |
 | Output quality dropped | Context file stale, or task outgrew its prompt | Refresh context; split the task into smaller steps |
 | Hitting usage limits mid-week | Too many scheduled tasks or heavy document jobs | Prune tasks; move heaviest user to a higher plan |
@@ -163,7 +163,7 @@ Worth internalising: community reports of agentic-AI accidents (the widely share
 
 ### Is Claude Cowork available on Windows?
 
-Yes. Cowork reached general availability on both macOS and Windows on 9 April 2026, and a Linux beta is now available. It requires the desktop app; there is no web or mobile version, though Pro and Max users can dispatch tasks from the mobile app to a running desktop session.
+Yes. Cowork reached general availability on both macOS and Windows on 9 April 2026 (with a Linux beta). Since 7 July 2026 it also runs on the web (claude.ai) and mobile, in beta and rolling out over several weeks starting with the Max plan. Sessions run remotely on Anthropic's servers and follow your account across devices; you still need the desktop app open for a task to reach local files, your browser, or your computer directly ([release notes](https://support.claude.com/en/articles/12138966-release-notes)).
 
 ### Which Claude plan do I need for Cowork?
 

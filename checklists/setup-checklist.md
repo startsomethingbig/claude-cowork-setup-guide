@@ -11,7 +11,7 @@
 - [ ] Created a dedicated `cowork-workspace/` folder (never Documents root or Desktop)
 - [ ] Built the taxonomy for your business type ([templates](../templates/folder-structure.md))
 - [ ] Confirmed exclusions: no payroll, credentials, identity documents, legal-privilege material
-- [ ] Granted ONLY the workspace folder, in "Ask before acting" mode
+- [ ] Granted ONLY the workspace folder, in "Manually approve" mode (formerly "Ask before acting")
 
 ## Step 2 — Context
 - [ ] Context file at workspace root ([template](../templates/context-file-template.md))
@@ -36,7 +36,7 @@
 ## Step 6 — Scheduled tasks
 - [ ] Scheduled the two proven workflows ([prompt patterns](../templates/scheduled-task-prompts.md))
 - [ ] Each writes a dated output file (missed runs visible by absence)
-- [ ] Scheduled for times the computer is reliably awake
+- [ ] Remote tasks run without your device; for any task that needs local files, scheduled for times the computer is awake with the app open
 - [ ] Task register filled in (task, owner, schedule, output)
 
 ## Step 7 — Guardrails
