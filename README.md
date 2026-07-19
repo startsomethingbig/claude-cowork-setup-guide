@@ -6,7 +6,7 @@ Claude Cowork is the agentic mode of Claude, in the desktop app and, since July 
 
 > Maintained by [Automata AI](https://www.automataai.com.au/claude-cowork-setup?utm_source=github&utm_medium=readme&utm_campaign=cowork-guide), a Sydney-based Claude consultancy. We run our own business on Cowork — content pipeline, CRM, filing, reporting — and this guide is the setup we use ourselves.
 
-**Last updated: 13 July 2026 · Tested with Claude desktop app (Cowork GA release, April 2026 onward); web and mobile Cowork in beta from July 2026**
+**Last updated: 20 July 2026 · Tested with Claude desktop app (Cowork GA release, April 2026 onward); web and mobile Cowork in beta from July 2026**
 
 ---
 
