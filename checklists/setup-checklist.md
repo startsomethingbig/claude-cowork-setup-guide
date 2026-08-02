@@ -3,7 +3,7 @@
 *Print or copy this. Companion to the [full setup guide](../README.md). Done in order, this is a few evenings of careful work — or see the guide's FAQ for done-for-you options.*
 
 ## Before you start
-- [ ] Claude desktop app installed (macOS or Windows; Linux in beta) — this guide works with local folders, which reach your computer through the desktop app
+- [ ] Claude desktop app installed (macOS or Windows) — this guide works with local folders, which reach your computer through the desktop app
 - [ ] Note: Cowork also runs on the web (claude.ai) and mobile, in beta since 7 July 2026, for work that does not touch local files
 - [ ] Paid plan active (Pro is enough to start)
 - [ ] Decided who owns this setup (one named person)

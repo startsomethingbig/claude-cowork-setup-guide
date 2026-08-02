@@ -6,7 +6,7 @@ Claude Cowork is the agentic mode of Claude, in the desktop app and, since July 
 
 > Maintained by [Automata AI](https://www.automataai.com.au/claude-cowork-setup?utm_source=github&utm_medium=readme&utm_campaign=cowork-guide), a Sydney-based Claude consultancy. We run our own business on Cowork — content pipeline, CRM, filing, reporting — and this guide is the setup we use ourselves.
 
-**Last updated: 27 July 2026 · Tested with Claude desktop app (Cowork GA release, April 2026 onward); web and mobile Cowork in beta from July 2026**
+**Last updated: 3 August 2026 · Tested with Claude desktop app (Cowork GA release, April 2026 onward); web and mobile Cowork in beta from July 2026**
 
 ---
 
@@ -35,7 +35,7 @@ Small business owners and operators (roughly 1 to 20 people) who want Claude Cow
 
 ## What you need before starting
 
-- **The Claude desktop app** on macOS or Windows (a Linux beta is also available), or Cowork on the web (claude.ai) and mobile. As of 7 July 2026 Cowork runs on web and mobile in addition to desktop, in beta and rolling out over several weeks starting with the Max plan ([release notes](https://support.claude.com/en/articles/12138966-release-notes)). Sessions run remotely on Anthropic's servers, so they keep going when your laptop is closed; you still need the desktop app open for a task to reach local files, your browser, or your computer directly.
+- **The Claude desktop app** on macOS or Windows, or Cowork on the web (claude.ai) and mobile. As of 7 July 2026 Cowork runs on web and mobile in addition to desktop, in beta and rolling out over several weeks starting with the Max plan ([release notes](https://support.claude.com/en/articles/12138966-release-notes)). Sessions run remotely on Anthropic's servers, so they keep going when your laptop is closed; you still need the desktop app open for a task to reach local files, your browser, or your computer directly.
 - **Any paid Claude plan.** Since 9 April 2026, Cowork is included on Pro, Max, Team and Enterprise ([release notes](https://support.claude.com/en/articles/12138966-release-notes)). Pro is US$20/month (US$17/month billed annually); Team standard seats are US$25/month or US$20/month annually. In Australia expect roughly A$30–45 per user per month — confirm the exact figure in your billing screen, as Anthropic does not publish AUD pricing on a public page.
 - **An internet connection throughout.** Cowork sessions run remotely, so they keep running when you close your laptop or the computer sleeps. The exception is work that touches local files, your browser, or your computer directly: that reaches your machine through the desktop app, so the app needs to be open for those steps ([getting started guide](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork)).
 - **Access to the tools you want connected** — your email, calendar, accounting software, CRM.
@@ -163,7 +163,7 @@ Worth internalising: community reports of agentic-AI accidents (the widely share
 
 ### Is Claude Cowork available on Windows?
 
-Yes. Cowork reached general availability on both macOS and Windows on 9 April 2026 (with a Linux beta). Since 7 July 2026 it also runs on the web (claude.ai) and mobile, in beta and rolling out over several weeks starting with the Max plan. Sessions run remotely on Anthropic's servers and follow your account across devices; you still need the desktop app open for a task to reach local files, your browser, or your computer directly ([release notes](https://support.claude.com/en/articles/12138966-release-notes)).
+Yes. Cowork reached general availability on both macOS and Windows on 9 April 2026. Since 7 July 2026 it also runs on the web (claude.ai) and mobile, in beta and rolling out over several weeks starting with the Max plan. Sessions run remotely on Anthropic's servers and follow your account across devices; you still need the desktop app open for a task to reach local files, your browser, or your computer directly ([release notes](https://support.claude.com/en/articles/12138966-release-notes)).
 
 ### Which Claude plan do I need for Cowork?
 
